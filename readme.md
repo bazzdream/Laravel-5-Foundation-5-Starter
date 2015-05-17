@@ -71,12 +71,22 @@ This will skip the development packages and ensure the version of the packages i
 
 !!!NEVER!!! run `composer update` on your production server.
 
-### Step 3: Configure Environment
+### Step 3: Use Bower and NPM to install the frontend dependencies
+
+```bash
+$ npm install
+$ bower install
+```
+
+This is required to get the latest Foundation 5 framework and other dependencies right in your project.
+The Zurb Foundation library and other bower components are located ***resources/assets/bower*** as defined in ***.bowerrc***.
+
+### Step 4: Configure Environment
 
 Duplicate the ***.env.example*** and rename to ***.env*** to configure your environment to your needs.
 Also this new file will not be pushed to your repo as you can see in ***.gitignore***.
 
-### Step 4: Migrate Database/Tables
+### Step 5: Migrate Database/Tables
 
 Run this command to create the default Users table:
 
@@ -84,7 +94,7 @@ Run this command to create the default Users table:
 $ php artisan migrate
 ```
 
-### Step 5: Set Encryption Key
+### Step 6: Set Encryption Key
 
 You can use artisan to do this
 
@@ -92,7 +102,7 @@ You can use artisan to do this
 $ php artisan key:generate
 ```
 
-### Step 6: Make sure app/storage is writable by your web server.
+### Step 7: Make sure app/storage is writable by your web server.
 
 If permissions are set correctly:
 
@@ -113,13 +123,7 @@ The structure of this starter site is the same as default Laravel 5.
 
 ## Asset Management
 
-You want to run the following command first to load gulp and laravel-elixir:
-
-```bash
-$ npm install
-```
-
-The Zurb Foundation library and other bower components are located ***resources/assets/bower*** as defined in ***.bowerrc***.
+With the use of Gulp and Laravel 5 elixir the automation of tasks is like magic.
 See ***gulpfile.js*** to get an overview where the Gulp task runner will handle our assets after running:
 
 ```bash
