@@ -1,0 +1,24 @@
+{
+  "name": "laravel-foundation",
+  "version": "1.0.0",
+  "description": "Laravel 5 with Zurb Foundation 5",
+  "keywords": [
+    "laravel",
+    "foundation"
+  ],
+  "authors": [
+    "Oliver Barabas"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.2"
+  }
+}
