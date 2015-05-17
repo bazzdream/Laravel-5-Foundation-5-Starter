@@ -102,18 +102,18 @@ You can use artisan to do this
 $ php artisan key:generate
 ```
 
-### Step 7: Make sure app/storage is writable by your web server.
+### Step 7: Make sure /storage is writable by your web server.
 
 If permissions are set correctly:
 
 ```bash
-$ chmod -R 775 app/storage
+$ chmod -R 775 storage
 ```
 
 Should work, if not try
 
 ```bash
-$ chmod -R 777 app/storage
+$ chmod -R 777 storage
 ```
 
 -----
