@@ -2,3 +2,4 @@
 /node_modules
 /resources/assets/bower
 .env
+/.phpintel
