@@ -23,6 +23,7 @@ See [github issue list](https://github.com/bazzdream/Laravel-5-Foundation-5-Star
 
 ## Recommendations
 I recommend that you use Gulp to compile and minify your assets. See the /gulpfile.js for a demo.
+Also i recommend that you use Vagrant in VMWare or VirtualBox with Laravels [Homestead](http://laravel.com/docs/5.0/homestead) to get a modern, nice and working dev environment.
 
 -----
 
